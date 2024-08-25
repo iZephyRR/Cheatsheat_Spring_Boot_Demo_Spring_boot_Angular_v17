@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: cheatsheet
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/your database
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        callable: false
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: your gmail
+    password: passwork from two factors
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+telegram:
+  bot:
+      username: your-bot-name
+      token: your-bot-token
+
+
+
